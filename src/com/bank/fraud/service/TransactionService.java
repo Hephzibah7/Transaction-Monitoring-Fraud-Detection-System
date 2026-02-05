@@ -33,8 +33,7 @@ public class TransactionService {
                 null,
                 accountId,
                 amount,
-                TransactionType.DEPOSIT
-        );
+                TransactionType.DEPOSIT);
 
         transactions.add(tx);
         fraudCheck(tx);
@@ -61,8 +60,39 @@ public class TransactionService {
                 accountId,
                 null,
                 amount,
-                TransactionType.WITHDRAWAL
-        );
+                TransactionType.WITHDRAWAL);
+
+        transactions.add(tx);
+        fraudCheck(tx);
+    }
+
+    public void transfer(String fromAccountId, String toAccountId, double amount)
+            throws InsufficientBalanceException, InvalidTransactionException {
+
+        if (amount <= 0) {
+            throw new InvalidTransactionException("Transfer amount must be positive");
+        }
+
+        Account from = accounts.get(fromAccountId);
+        Account to = accounts.get(toAccountId);
+
+        if (from == null || to == null) {
+            throw new InvalidTransactionException("Invalid account for transfer");
+        }
+
+        if (from.getBalance() < amount) {
+            throw new InsufficientBalanceException("Insufficient balance for transfer");
+        }
+
+        from.debit(amount);
+        to.credit(amount);
+
+        Transaction tx = new Transaction(
+                UUID.randomUUID().toString(),
+                fromAccountId,
+                toAccountId,
+                amount,
+                TransactionType.TRANSFER);
 
         transactions.add(tx);
         fraudCheck(tx);
