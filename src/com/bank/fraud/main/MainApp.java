@@ -17,6 +17,7 @@ public class MainApp {
         try {
             service.deposit("A101", 200000);
             service.withdraw("A101", 150000);
+            service.transfer("A101","A102", 1000);
         } catch (InsufficientBalanceException | InvalidTransactionException e) {
             System.out.println(e.getMessage());
         }
