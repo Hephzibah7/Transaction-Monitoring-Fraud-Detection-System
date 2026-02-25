@@ -23,7 +23,7 @@ The system assigns risk scores and generates alerts that can be integrated into 
 ## 🏗️ Architecture
 
 ```
-Transaction Input → Validation → Rule Engine → Risk Scoring → Alert Generation
+Transaction Input → Validation → Fraud Check
 ```
 
 ### Core Components:
