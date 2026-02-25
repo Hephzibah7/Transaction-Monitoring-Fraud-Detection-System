@@ -120,7 +120,7 @@ java Main
 
 ## 👩‍💻 Author
 
-**Hephzibah**
+**Hephzibah Ranjan**
 Full Stack Developer | Problem Solver | System Design Enthusiast
 
 ---
