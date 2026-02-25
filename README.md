@@ -1,7 +1,3 @@
-Here’s a **clean, professional README.md** you can directly copy and push to your GitHub repository 👇
-
----
-
 # 📊 Transaction Monitoring & Fraud Detection System
 
 A scalable **Java-based fraud detection system** designed to monitor financial transactions, detect suspicious activity, and generate risk alerts in real time.
