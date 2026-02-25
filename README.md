@@ -30,10 +30,8 @@ Transaction Input → Validation → Rule Engine → Risk Scoring → Alert Gene
 
 * **Transaction Model** – Represents transaction data
 * **Fraud Detection Engine** – Applies fraud rules
-* **Risk Scoring Module** – Calculates transaction risk level
-* **Alert System** – Flags suspicious transactions
 * **Data Storage Layer** – Stores transaction history
-
+* **Exception Handling** – Handles Insufficient Balance and Invalid Transaction Exception
 ---
 
 ## ⚙️ Tech Stack
@@ -55,10 +53,7 @@ Transaction-Monitoring-Fraud-Detection-System/
 │   │     └── Transaction.java
 │   ├── service/
 │   │     └── FraudDetectionService.java
-│   ├── engine/
-│   │     └── RuleEngine.java
-│   ├── util/
-│   │     └── RiskCalculator.java
+│   ├
 │   └── Main.java
 │
 └── README.md
@@ -69,9 +64,7 @@ Transaction-Monitoring-Fraud-Detection-System/
 ## 🚀 Features
 
 * ✅ Rule-based fraud detection
-* ✅ Risk scoring system
 * ✅ Transaction history tracking
-* ✅ Suspicious activity alerts
 * ✅ Scalable architecture for real-time monitoring
 
 ---
@@ -79,9 +72,7 @@ Transaction-Monitoring-Fraud-Detection-System/
 ## 🔍 Sample Fraud Detection Rules
 
 * Transactions above a threshold (e.g., ₹1,00,000)
-* Multiple transactions within a short time frame
-* Transactions from different geographic locations
-* Repeated failed authentication attempts
+
 
 ---
 
@@ -130,15 +121,8 @@ java Main
 ## 👩‍💻 Author
 
 **Hephzibah**
-Java Backend Developer | Problem Solver | System Design Enthusiast
+Full Stack Developer | Problem Solver | System Design Enthusiast
 
 ---
 
-If you'd like, I can also:
 
-* 🔥 Make it more ATS/recruiter-focused
-* 🏆 Make it look more production-level
-* 📊 Add architecture diagram
-* 🤖 Add ML-based version description
-
-Just tell me what level you want — academic, intermediate, or production-ready 🚀
